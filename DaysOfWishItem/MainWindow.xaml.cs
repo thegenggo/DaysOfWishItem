@@ -29,6 +29,11 @@ namespace DaysOfWishItem
         {
             float income = float.Parse(txtIncome.Text);
             float expenses = float.Parse(txtExpenses.Text);
+            if (expenses > income)
+            {
+                MessageBox.Show("รายจ่ายของคุณไม่ควรมากกว่ารายได้!!!");
+                return;
+            }
             float price = float.Parse(txtPrice.Text);
             int days = (int)Math.Ceiling(price / (income - expenses));
             txtDays.Text = days.ToString();

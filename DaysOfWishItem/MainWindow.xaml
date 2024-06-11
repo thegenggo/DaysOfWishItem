@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DaysOfWishItem"
         mc:Ignorable="d"
-        Title="MainWindow" Height="200" Width="450">
+        Title="MainWindow" Height="200" Width="450"
+        WindowStartupLocation="CenterScreen">
     <Grid Margin="20">
         <StackPanel>
             <StackPanel Orientation="Horizontal">
